@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobSeeker - Job Listings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>JobSeeker</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="search-bar">
+            <input type="text" id="search-input" placeholder="Search jobs..." />
+            <select id="job-type-filter">
+                <option value="">All Job Types</option>
+                <option value="full-time">Full-time</option>
+                <option value="part-time">Part-time</option>
+                <option value="remote">Remote</option>
+            </select>
+            <select id="location-filter">
+                <option value="">All Locations</option>
+                <option value="new-york">New York</option>
+                <option value="los-angeles">Los Angeles</option>
+                <option value="remote">Remote</option>
+            </select>
+            <button id="apply-filters">Apply Filters</button>
+        </section>
+
+        <section id="job-list" class="job-list">
+            <!-- Job Cards will be dynamically populated here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 JobSeeker. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
